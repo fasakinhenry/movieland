@@ -1,6 +1,6 @@
 # MovieLand
 
-- ![MovieLand Mac Screenshot](./movieland-screenshot-mac.png)
+![MovieLand Mac Screenshot](./public/movieland-screenshot-mac.png)
 
 > Check it out here: [MovieLand on Vercel](https://movielandhub.vercel.app/)
 
