@@ -206,7 +206,7 @@ h1 {
 
 .footer a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
 }
 
