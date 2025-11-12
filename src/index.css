@@ -203,6 +203,7 @@ h1 {
   bottom: 0;
   left: 0;
   text-align: center;
+  z-index: 10000;
 }
 
 .footer a {
