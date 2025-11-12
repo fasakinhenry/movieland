@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react';
 import './index.css';
+
 import SearchIcon from './images/search.svg';
+
+import MovieCard from './components/MovieCard';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    searchMovies('Spiderman');
+    searchMovies("Ben 10");
   }, []);
 
   const searchMovies = async (title) => {
@@ -32,6 +35,18 @@ const App = () => {
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
+
+      {movies?.length > 0 ? (
+        <div className='container'>
+          {movies.map((movie) => (
+            <MovieCard movie={movie} key={movie.imdbID} />
+          ))}
+        </div>
+      ) : (
+        <div className='empty'>
+          <h2>No movies found</h2>
+        </div>
+      )}
     </div>
   );
 };
