@@ -10,7 +10,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('Ben 10');
 
   useEffect(() => {
-    searchMovies("Ben 10");
+    searchMovies('Ben 10');
   }, []);
 
   const searchMovies = async (title) => {
@@ -47,6 +47,19 @@ const App = () => {
           <h2>No movies found</h2>
         </div>
       )}
+      {/* Add link to the name */}
+      <div className='footer'>
+        <p>
+          Made with ❤️ by{' '}
+          <a
+            href='https://fasakinhenry.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Henqsoft
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
