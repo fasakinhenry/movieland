@@ -191,6 +191,16 @@ h1 {
   opacity: 1;
 }
 
+.footer {
+  display: flex;
+  color: white;
+  width: 100vw;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
