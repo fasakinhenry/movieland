@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './index.css';
+import SearchIcon from './images/search.svg';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -24,6 +25,11 @@ const App = () => {
           placeholder='Search for movies'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <img
+          src={SearchIcon}
+          alt='search'
+          onClick={() => searchMovies(searchTerm)}
         />
       </div>
     </div>
