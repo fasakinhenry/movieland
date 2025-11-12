@@ -57,7 +57,7 @@ const App = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Henqsoft →
+            Henqsoft
           </a>
         </p>
       </div>
