@@ -192,13 +192,15 @@ h1 {
 }
 
 .footer {
-  display: flex;
+  display: absolute;
   color: white;
   width: 100vw;
   padding: 1rem;
   justify-content: center;
   align-items: center;
   background: #287bff;
+  bottom: 0;
+  left: 0
 }
 
 @media screen and (max-width: 600px) {
