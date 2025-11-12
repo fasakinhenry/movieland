@@ -7,7 +7,7 @@ import MovieCard from './components/MovieCard';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('Ben 10');
 
   useEffect(() => {
     searchMovies("Ben 10");

@@ -7,7 +7,11 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
 
       <div>
         <img
-          src={Poster !== 'N/A' ? Poster : 'https://via.placeholder.com/400'}
+          src={
+            Poster !== 'N/A'
+              ? Poster
+              : 'https://via.assets.so/img.jpg?w=400&h=400&gradient=linear-gradient%28135deg%2C+%23ffecd2%2C+%23fcb69f%2C+%23a1c4fd%2C+%23c2e9fb%29&text=+&f=png'
+          }
           alt={Title}
         />
       </div>
